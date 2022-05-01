@@ -7,9 +7,7 @@
   "author": "NullVoxPopuli",
   "license": "MIT",
   "homepage": "https://github.com/NullVoxPopuli/coc-glint",
-  "repository": {
-    "url": "https://github.com/NullVoxPopuli/coc-glint"
-  },
+  "repository": "https://github.com/NullVoxPopuli/coc-glint",
   "keywords": [
     "ember",
     "glimmer",
