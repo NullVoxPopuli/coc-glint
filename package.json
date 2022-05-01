@@ -35,7 +35,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js": "eslint . --ext .ts",
+    "lint:js": "eslint .",
     "build": "tsc --skipLibCheck",
     "prepublishOnly": "build"
   },
