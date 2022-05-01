@@ -72,7 +72,7 @@ jobs:
   publish:
     name: Release
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     needs: [lint, commits, types]
 
     steps:
