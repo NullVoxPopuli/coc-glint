@@ -34,6 +34,31 @@ jobs:
     - name: ESLint
       run: yarn lint:js
 
+  tooling:
+    name: Tooling
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: volta-cli/action@v1
+      - name: Cache pnpm modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - uses: pnpm/action-setup@v2.2.1
+        with:
+          version: 6.32.1
+          run_install: true
+      - name: Semantic Release
+        run: pnpm exec semantic-release --dry-run
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   types:
     name: Types
     runs-on: ubuntu-latest
@@ -73,7 +98,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-    needs: [lint, commits, types]
+    needs: [lint, commits, types, tooling]
 
     steps:
     - uses: actions/checkout@v3
