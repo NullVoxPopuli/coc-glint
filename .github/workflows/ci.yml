@@ -30,20 +30,50 @@ jobs:
       with:
         version: 6.32.1
         run_install: true
+
     - name: ESLint
       run: yarn lint:js
+
+  types:
+    name: Types
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: volta-cli/action@v1
+    - name: Cache pnpm modules
+      uses: actions/cache@v3
+      with:
+        path: ~/.pnpm-store
+        key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-
+
+    - uses: pnpm/action-setup@v2.2.1
+      with:
+        version: 6.32.1
+        run_install: true
     - name: Types
-      run: yarn tsc --noEmit --skipLibCheck
+      # coc types have issues....
+      run: pnpm exec tsc --noEmit --skipLibCheck
+
+
+  commits:
+    name: Commit Messages
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - uses: volta-cli/action@v1
     - uses: wagoid/commitlint-github-action@v4.1.11
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
   publish:
     name: Release
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
-    needs: [lint]
+    needs: [lint, commits, types]
 
     steps:
     - uses: actions/checkout@v3
