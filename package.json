@@ -29,7 +29,13 @@
     "coc": "^0.0.77"
   },
   "activationEvents": [
-    "workspaceContains:.glintrc*"
+    "onLanguage:typescript.glimmer",
+    "onLanguage:javascript.glimmer",
+    "onLanguage:Glimmer TS",
+    "onLanguage:Glimmer JS",
+    "onLanguage:GlimmerTS",
+    "onLanguage:GlimmerJS",
+    "workspaceContains:.glintrc.yml"
   ],
   "scripts": {
     "release": "semantic-release",
