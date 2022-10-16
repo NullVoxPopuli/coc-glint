@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@glint/config': ^0.8.0
+  '@glint/config': ^0.9.0
   '@glint/core': ^0.8.0
   '@nullvoxpopuli/eslint-configs': ^2.2.14
   '@semantic-release/changelog': ^6.0.1
@@ -14,7 +14,7 @@ specifiers:
   typescript: ^4.6.4
 
 dependencies:
-  '@glint/config': 0.8.0
+  '@glint/config': 0.9.5
   '@glint/core': 0.8.0
   coc.nvim: 0.0.82_l47be6km5p57gglrggidw5gsgm
   resolve: 1.22.0
@@ -194,6 +194,17 @@ packages:
     resolution: {integrity: sha512-T4VL7qbvO7t4f4umfXmNd32NcJDzSimkpcfcUakq45ojGByCdIrvk/Q8cTP9pC3SlcRdYZfZTAa39Zeef1nwVg==}
     dependencies:
       cosmiconfig: 6.0.0
+      escape-string-regexp: 4.0.0
+      minimatch: 3.1.2
+      resolve: 1.22.0
+      silent-error: 1.1.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@glint/config/0.9.5:
+    resolution: {integrity: sha512-n57V4EgEG2SGqd71CBh4NMjgWuiyM1zzM7sDmXsZ9mAvP38RRBOKjRNBfyWh8/FHX5AAPE7QD2o5GdprafRXFw==}
+    dependencies:
       escape-string-regexp: 4.0.0
       minimatch: 3.1.2
       resolve: 1.22.0
@@ -1016,7 +1027,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
   /conventional-changelog-angular/5.0.13:
     resolution: {integrity: sha512-i/gipMxs7s8L/QeuavPF2hLnJgH6pEZAttySB6aiQLWcX3puWDL3ACVmvBhJGxnAy52Qc15ua26BufY6KpmrVA==}
@@ -1311,7 +1322,7 @@ packages:
     dev: true
 
   /escape-string-regexp/1.0.5:
-    resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=}
+    resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
 
   /escape-string-regexp/4.0.0:
@@ -2445,7 +2456,7 @@ packages:
     dev: true
 
   /ms/2.0.0:
-    resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=}
+    resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
