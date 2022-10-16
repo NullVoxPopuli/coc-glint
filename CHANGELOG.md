@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/NullVoxPopuli/coc-glint/compare/v1.0.1...v1.0.2) (2022-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency coc.nvim to ^0.0.82 ([faaf917](https://github.com/NullVoxPopuli/coc-glint/commit/faaf917cd1924c1a410163a78e32ac948e55e15a))
+
 ## [1.0.1](https://github.com/NullVoxPopuli/coc-glint/compare/v1.0.0...v1.0.1) (2022-05-01)
 
 
