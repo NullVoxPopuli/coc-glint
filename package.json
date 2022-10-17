@@ -1,6 +1,6 @@
 {
   "name": "coc-glint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "Glint language server extension for coc.nvim",
   "main": "lib/extension.js",
