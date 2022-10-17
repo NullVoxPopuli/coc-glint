@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/NullVoxPopuli/coc-glint/compare/v1.0.3...v1.0.4) (2022-10-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @glint/core to ^0.9.0 ([f362606](https://github.com/NullVoxPopuli/coc-glint/commit/f362606ee9f3b3893031671d2c01bf160bd1526d))
+
 ## [1.0.3](https://github.com/NullVoxPopuli/coc-glint/compare/v1.0.2...v1.0.3) (2022-10-17)
 
 
