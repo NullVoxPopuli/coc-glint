@@ -67,7 +67,7 @@
     "semantic-release": "^19.0.2",
     "typescript": "^5.0.0"
   },
-  "packageManager": "pnpm@7.30.5",
+  "packageManager": "pnpm@8.15.7",
   "volta": {
     "node": "18.15.0",
     "yarn": "1.22.19"
