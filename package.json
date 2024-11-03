@@ -59,7 +59,7 @@
     "resolve": "^1.22.0"
   },
   "devDependencies": {
-    "@nullvoxpopuli/eslint-configs": "^3.0.0",
+    "@nullvoxpopuli/eslint-configs": "^4.0.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.0.0",
