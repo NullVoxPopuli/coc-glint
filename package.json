@@ -69,7 +69,7 @@
   },
   "packageManager": "pnpm@7.30.5",
   "volta": {
-    "node": "18.15.0",
+    "node": "18.20.8",
     "yarn": "1.22.22"
   }
 }
