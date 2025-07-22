@@ -16,7 +16,7 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: volta-cli/action@v4
     - name: Cache pnpm modules
       uses: actions/cache@v3
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
@@ -63,7 +63,7 @@ jobs:
     name: Types
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: volta-cli/action@v4
     - name: Cache pnpm modules
       uses: actions/cache@v3
@@ -87,7 +87,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - uses: volta-cli/action@v4
@@ -101,7 +101,7 @@ jobs:
     needs: [lint, commits, types, tooling]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: volta-cli/action@v4
     - name: Cache pnpm modules
       uses: actions/cache@v3
