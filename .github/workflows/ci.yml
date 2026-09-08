@@ -28,7 +28,7 @@ jobs:
 
     - uses: pnpm/action-setup@v2.2.4
       with:
-        version: 6.32.1
+        version: 6.35.1
         run_install: true
 
     - name: ESLint
@@ -51,7 +51,7 @@ jobs:
 
       - uses: pnpm/action-setup@v2.2.4
         with:
-          version: 6.32.1
+          version: 6.35.1
           run_install: true
       - name: Semantic Release
         run: pnpm exec semantic-release --dry-run
@@ -75,7 +75,7 @@ jobs:
 
     - uses: pnpm/action-setup@v2.2.4
       with:
-        version: 6.32.1
+        version: 6.35.1
         run_install: true
     - name: Types
       # coc types have issues....
@@ -113,7 +113,7 @@ jobs:
 
     - uses: pnpm/action-setup@v2.2.4
       with:
-        version: 6.32.1
+        version: 6.35.1
         run_install: true
     - name: Release
       env:
