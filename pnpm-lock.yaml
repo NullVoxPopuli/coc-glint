@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@glint/config': ^0.9.0
-  '@glint/core': ^0.9.0
+  '@glint/core': ^1.0.0
   '@nullvoxpopuli/eslint-configs': ^3.0.0
   '@semantic-release/changelog': ^6.0.1
   '@semantic-release/git': ^10.0.1
@@ -15,7 +15,7 @@ specifiers:
 
 dependencies:
   '@glint/config': 0.9.5
-  '@glint/core': 0.9.5_typescript@5.0.2
+  '@glint/core': 1.5.2_typescript@5.0.2
   coc.nvim: 0.0.82_jctqbo63t7qz6fln7d32ltm3yq
   resolve: 1.22.0
 
@@ -363,6 +363,13 @@ packages:
     resolution: {integrity: sha512-tMZxQpOddUVmHEOuripkNqVR7ba0K4doiYnFd4WyswqoHPlxqpBujbIamQ+bWCWEF0U4yxsXKa31ekS/JHkiBQ==}
     dependencies:
       '@simple-dom/interface': 1.4.0
+    dev: true
+
+  /@glimmer/interfaces/0.84.3:
+    resolution: {integrity: sha512-dk32ykoNojt0mvEaIW6Vli5MGTbQo58uy3Epj7ahCgTHmWOKuw/0G83f2UmFprRwFx689YTXG38I/vbpltEjzg==}
+    dependencies:
+      '@simple-dom/interface': 1.4.0
+    dev: false
 
   /@glimmer/syntax/0.84.2:
     resolution: {integrity: sha512-SPBd1tpIR9XeaXsXsMRCnKz63eLnIZ0d5G9QC4zIBFBC3pQdtG0F5kWeuRVCdfTIFuR+5WBMfk5jvg+3gbQhjg==}
@@ -371,6 +378,16 @@ packages:
       '@glimmer/util': 0.84.2
       '@handlebars/parser': 2.0.0
       simple-html-tokenizer: 0.5.11
+    dev: true
+
+  /@glimmer/syntax/0.84.3:
+    resolution: {integrity: sha512-ioVbTic6ZisLxqTgRBL2PCjYZTFIwobifCustrozRU2xGDiYvVIL0vt25h2c1ioDsX59UgVlDkIK4YTAQQSd2A==}
+    dependencies:
+      '@glimmer/interfaces': 0.84.3
+      '@glimmer/util': 0.84.3
+      '@handlebars/parser': 2.0.0
+      simple-html-tokenizer: 0.5.11
+    dev: false
 
   /@glimmer/util/0.84.2:
     resolution: {integrity: sha512-VbhzE2s4rmU+qJF3gGBTL1IDjq+/G2Th51XErS8MQVMCmE4CU2pdwSzec8PyOowqCGUOrVIWuMzEI6VoPM4L4w==}
@@ -378,6 +395,15 @@ packages:
       '@glimmer/env': 0.1.7
       '@glimmer/interfaces': 0.84.2
       '@simple-dom/interface': 1.4.0
+    dev: true
+
+  /@glimmer/util/0.84.3:
+    resolution: {integrity: sha512-qFkh6s16ZSRuu2rfz3T4Wp0fylFj3HBsONGXQcrAdZjdUaIS6v3pNj6mecJ71qRgcym9Hbaq/7/fefIwECUiKw==}
+    dependencies:
+      '@glimmer/env': 0.1.7
+      '@glimmer/interfaces': 0.84.3
+      '@simple-dom/interface': 1.4.0
+    dev: false
 
   /@glint/config/0.9.5:
     resolution: {integrity: sha512-n57V4EgEG2SGqd71CBh4NMjgWuiyM1zzM7sDmXsZ9mAvP38RRBOKjRNBfyWh8/FHX5AAPE7QD2o5GdprafRXFw==}
@@ -390,30 +416,22 @@ packages:
       - supports-color
     dev: false
 
-  /@glint/core/0.9.5_typescript@5.0.2:
-    resolution: {integrity: sha512-U7Fgkc2wtEXxmL6o6SgxlhUB9daFAGko7of2GisvkqKYxfPw3ximFu12ZK9aEaWEpn23p2Wrc5AAgvW1zBxUfA==}
+  /@glint/core/1.5.2_typescript@5.0.2:
+    resolution: {integrity: sha512-kbEt8jBEkH65yDB20tBq/rnZl+iigmAenKQcgu1cqex6/eT6LrQ5E9QxyKtqe9S18qZv0c/LNa0qE7jwbAEKMA==}
     hasBin: true
     peerDependencies:
-      typescript: ^4.7.0
+      typescript: '>=4.8.0'
     dependencies:
-      '@glint/config': 0.9.5
-      '@glint/transform': 0.9.5
-      resolve: 1.22.0
+      '@glimmer/syntax': 0.84.3
+      escape-string-regexp: 4.0.0
+      semver: 7.8.5
+      silent-error: 1.1.1
       typescript: 5.0.2
       uuid: 8.3.2
       vscode-languageserver: 8.0.2
       vscode-languageserver-textdocument: 1.0.7
-      vscode-uri: 3.0.3
+      vscode-uri: 3.2.0
       yargs: 17.6.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /@glint/transform/0.9.5:
-    resolution: {integrity: sha512-AHtXqQE16zV6VDDcC0ntYptitRVKe3hZveUqsKGGli+uOLIc0Ni/AhahaWgig/GwNXzGZy0qj3GU+hKvXSU8ng==}
-    dependencies:
-      '@glimmer/syntax': 0.84.2
-      '@glint/config': 0.9.5
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1240,7 +1258,7 @@ packages:
   /builtins/5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.3.8
+      semver: 7.8.5
     dev: true
 
   /call-bind/1.0.2:
@@ -1627,7 +1645,7 @@ packages:
       hash-for-dep: 1.5.1
       heimdalljs-logger: 0.1.10
       js-string-escape: 1.0.1
-      semver: 7.3.8
+      semver: 7.8.5
       silent-error: 1.1.1
       walk-sync: 2.2.0
     transitivePeerDependencies:
@@ -1639,7 +1657,7 @@ packages:
     engines: {node: 10.* || >= 12.*}
     dependencies:
       resolve-package-path: 3.1.0
-      semver: 7.3.8
+      semver: 7.8.5
       silent-error: 1.1.1
     transitivePeerDependencies:
       - supports-color
@@ -3082,7 +3100,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.11.0
-      semver: 7.3.8
+      semver: 7.8.5
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -3742,6 +3760,11 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
+  /semver/7.8.5:
+    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   /shebang-command/2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -4242,6 +4265,7 @@ packages:
 
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
     dev: false
 
@@ -4256,7 +4280,7 @@ packages:
     resolution: {integrity: sha512-nd2HUpKc6RWblPZQ2GDuI65sxJ2n/UqZwSBVtj64xlWjMx0m7ZB2m9b2JS3v1f+n9VWH/dd1CMhkHfP6pIdckA==}
     dependencies:
       resolve-package-path: 3.1.0
-      semver: 7.3.8
+      semver: 7.8.5
     dev: true
 
   /vscode-json-languageservice/4.2.1:
@@ -4300,6 +4324,11 @@ packages:
 
   /vscode-uri/3.0.3:
     resolution: {integrity: sha512-EcswR2S8bpR7fD0YPeS7r2xXExrScVMxg4MedACaWHEtx9ftCF/qHG1xGkolzTPcEmjTavCQgbVzHUIdTMzFGA==}
+    dev: true
+
+  /vscode-uri/3.2.0:
+    resolution: {integrity: sha512-m2gXo3bn0G1kT9InzMf07fTbqMbGtyckj3bH5ktLO+1Ssv+yiATZ4dhwaQv9UZWxJh6E9IFGnQyjgWVDWVBDrg==}
+    dev: false
 
   /walk-sync/0.3.4:
     resolution: {integrity: sha512-ttGcuHA/OBnN2pcM6johpYlEms7XpO5/fyKIr48541xXedan4roO8cS1Q2S/zbbjGH/BarYDAMeS2Mi9HE5Tig==}
