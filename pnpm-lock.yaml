@@ -15,8 +15,8 @@ specifiers:
 
 dependencies:
   '@glint/config': 0.9.5
-  '@glint/core': 0.9.5_typescript@5.0.2
-  coc.nvim: 0.0.82_jctqbo63t7qz6fln7d32ltm3yq
+  '@glint/core': 0.9.5_typescript@5.9.3
+  coc.nvim: 0.0.82_bhtcmpjfvy4ukpihzkft3iobxi
   resolve: 1.22.0
 
 devDependencies:
@@ -26,7 +26,7 @@ devDependencies:
   '@types/node': 18.11.8
   '@types/resolve': 1.20.2
   semantic-release: 19.0.2
-  typescript: 5.0.2
+  typescript: 5.9.3
 
 packages:
 
@@ -390,7 +390,7 @@ packages:
       - supports-color
     dev: false
 
-  /@glint/core/0.9.5_typescript@5.0.2:
+  /@glint/core/0.9.5_typescript@5.9.3:
     resolution: {integrity: sha512-U7Fgkc2wtEXxmL6o6SgxlhUB9daFAGko7of2GisvkqKYxfPw3ximFu12ZK9aEaWEpn23p2Wrc5AAgvW1zBxUfA==}
     hasBin: true
     peerDependencies:
@@ -399,7 +399,7 @@ packages:
       '@glint/config': 0.9.5
       '@glint/transform': 0.9.5
       resolve: 1.22.0
-      typescript: 5.0.2
+      typescript: 5.9.3
       uuid: 8.3.2
       vscode-languageserver: 8.0.2
       vscode-languageserver-textdocument: 1.0.7
@@ -1337,7 +1337,7 @@ packages:
       wrap-ansi: 7.0.0
     dev: false
 
-  /coc.nvim/0.0.82_jctqbo63t7qz6fln7d32ltm3yq:
+  /coc.nvim/0.0.82_bhtcmpjfvy4ukpihzkft3iobxi:
     resolution: {integrity: sha512-+70ap6FH8FSdaQ0CPijaasQzg6ue84j4/LkX6ZSpALX7YKBcGGDkCcd6adgaC/86b/ZqT3iTTEbMh3mdaI5qPA==}
     engines: {node: '>=12.12.0'}
     peerDependencies:
@@ -1345,7 +1345,7 @@ packages:
       typescript: ^4
     dependencies:
       '@types/node': 18.11.8
-      typescript: 5.0.2
+      typescript: 5.9.3
     dev: false
 
   /color-convert/1.9.3:
@@ -2313,7 +2313,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.15.4
+      uglify-js: 3.19.3
     dev: true
 
   /hard-rejection/2.1.0:
@@ -4167,13 +4167,13 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /typescript/5.0.2:
-    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
-    engines: {node: '>=12.20'}
+  /typescript/5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
-  /uglify-js/3.15.4:
-    resolution: {integrity: sha512-vMOPGDuvXecPs34V74qDKk4iJ/SN4vL3Ow/23ixafENYvtrNvtbcgUeugTcUGRGsOF/5fU8/NYSL5Hyb3l1OJA==}
+  /uglify-js/3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     requiresBuild: true
